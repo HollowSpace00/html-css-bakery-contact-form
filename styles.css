@@ -1,0 +1,119 @@
+*{box-sizing: border-box;
+margin: 0;
+padding: 0;
+scroll-behavior: smooth;
+font-family: "Delius", cursive;
+}
+
+.contact{
+    background-image: url(images/bakerybackground.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.contact_content{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 35%;
+    background: #391a01c0;
+    padding: 3%;
+    border-radius: 20px;
+    border: 7px dotted #ffffffdb;
+    position: absolute;
+    top: 7%;
+    right: 10%;
+}
+
+.contact_content h1{
+    text-align: center;
+    font-size: 1.7rem;
+    color: #f9be1c;
+}
+
+.contact_content label{
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.contact_content input{
+    font-size: 1.0rem;
+    border-radius: 10px;
+    border:  4px dotted #fb8f0a;
+    padding: 0 5%;
+    outline: none;
+}
+
+.contact_content textarea{
+    font-size: 1.0rem;
+    border-radius: 10px;
+    border:  4px dotted #fb8f0a;
+    padding: 2% 5%;
+    height: 15%;
+    scroll-behavior: auto;
+    resize: none;
+    outline: none;
+}
+
+.contact_content button{
+    background: #ff9d00;
+    color: #fff;
+    font-size: 1.0rem;
+    padding: 3%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.contact_content button:hover{
+    transition: 0.5s ease;
+    background: #b13901;
+}
+
+.contact h2{
+    font-family: "Pacifico", cursive;
+    color: #fff;
+    font-size: 75px;
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    width: 30%;
+    text-shadow: 2px 5px #000;
+}
+
+/*Media Queries*/
+
+@media (min-width:300px) and (max-width:700px){
+    
+    .contact h2{
+        display: none;
+    }
+
+    .contact_content{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 85%;
+    background: #391a01c0;
+    padding: 3%;
+    border-radius: 20px;
+    border: 7px dotted #ffffffdb;
+    position: absolute;
+    top: 3%;
+    right: 7%;
+}
+
+.contact_content textarea{
+    font-size: 15px;
+    border-radius: 10px;
+    border:  4px dotted #fb8f0a;
+    padding: 2% 5%;
+    height: 15%;
+    scroll-behavior: auto;
+    resize: none;
+    outline: none;
+}
+}
